@@ -4,19 +4,18 @@ Repositorio de la tarea 2
 ## Sistema de Procesamiento de Comentarios
 
 Antes de ejecutar el código asegurate de instalar los prerrequisitos del sistema ejecutando:
-> sudo pip install -r requirements.txt 
+> sudo pip install -r requirements.txt
 
 Los paquetes que se instalarán son los siguientes:
 
-Paquete | Versión                           | Descripción
---------|-----------------------------------|
-Flask   | 0.10.1                            | Micro framework de desarrollo
-requests| 2.12.4                            | API interna utilizada en Flask para trabajar con las peticiones hacia el servidor
-afinn   | 0.1                               | API para realizar analisis de sentimientos
-tweepy  | 3.6.0                             | API para recolectar los comentarios de Twitter
+| Paquete  | Versión                             | Descripción |
+| -------- | ----------------------------------- | ----------- |
+| Flask    | 0.10.1                              | Micro framework de desarrollo |
+| requests | 2.12.4                              | API interna utilizada en Flask para trabajar con las peticiones hacia el servidor |
+| afinn    | 0.1                                 | API para realizar analisis de sentimientos |
+| tweepy   | 3.6.0                               | API para recolectar los comentarios de Twitter |
 
-
-*__Nota__: También puedes instalar éstos prerrequisitos manualmente ejecutando los siguientes comandos* 
+*__Nota__: También puedes instalar éstos prerrequisitos manualmente ejecutando los siguientes comandos*
 > sudo pip install Flask
 > sudo pip install requests
 > sudo pip install afinn
