@@ -104,29 +104,31 @@
                 <div class="col-md-8">
                   <div class="page-header">
                     <h1><small class="pull-right"></small> Comentarios de Twitter </h1>
-                  </div> 
+                  </div>
                    <div class="comments-list">
-                       
+
                         {% for comment in result.sentiments %}
                         <div class="media">
-                           <p class="pull-right"><small>{{comment.polarity}}</small></p>
-                           <p class="pull-right"><small> |  </small></p>
-                            
+
+                          {% if comment.polarity == "positive" %}
+                              <p class="pull-right" style="background-color:lime"><small>{{comment.polarity}}</small></p>
+                          {% else %}
+                              <p class="pull-right" style="background-color:#fe5656" ><small>{{comment.polarity}}</small></p>
+                          {% endif %}
+                          <p class="pull-right"><small>   </small></p>
                             <div class="media-body">
-                                <h4 class="media-heading">{{comment.username}}</h4>
-                              
-                              {{comment.text}}
-                              
-                              
+                                <h4 class="media-heading" style="font-weight: bold">{{comment.username}}</h4>
+                                {{comment.text}}
                             </div>
                         </div>
+                        <hr>
                         {% endfor %}
-                          
-                       
+
+
                    </div>
-                    
-                    
-                    
+
+
+
                 </div>
             </div>
         </div>

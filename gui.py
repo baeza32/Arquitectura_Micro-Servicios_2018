@@ -14,8 +14,8 @@
 #
 #   Este archivo define la interfaz gráfica del usuario. Recibe dos parámetros que posteriormente son enviados
 #   a servicios que la interfaz utiliza.
-#   
-#   
+#
+#
 #
 #                                             gui.py
 #           +-----------------------+-------------------------+------------------------+

@@ -16,20 +16,28 @@ Los paquetes que se instalarán son los siguientes:
 | tweepy   | 3.6.0                               | API para recolectar los comentarios de Twitter |
 
 *__Nota__: También puedes instalar éstos prerrequisitos manualmente ejecutando los siguientes comandos*
-> sudo pip install Flask
-> sudo pip install requests
-> sudo pip install afinn
-> sudo pip install tweepy
+```sh
+$ sudo pip install Flask
+$ sudo pip install requests
+$ sudo pip install afinn
+$ sudo pip install tweepy
+```
+
 
 Una vez instalados los prerrequisitos es momento de ejcutar el sistema siguiendo los siguientes pasos:
 1. Ejecutar el servicio:
-   > python servicios/sv_information.py
-   > python servicios/sv_tweets.py
-   > python servicios/sv_clasification.py
+   ```sh
+   $ python servicios/sv_information.py
+   $ python servicios/sv_tweets.py
+   $ python servicios/sv_clasification.py
+   ```
 1. Ejecutar el GUI:
-   > python gui.py
+   ```sh
+   $ python gui.py
+   ```
 1. Abrir el navegador
 1. Acceder a la url del sistema:
    > http://localhost:8000/ - página de inicio!
 
 Las especificaciones de los servicios se encuentran en servicios/README.md
+*__Nota__: El proyecto trabaja con Python 2.7
